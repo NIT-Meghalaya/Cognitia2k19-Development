@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/assests/css/bootstrap.min.css" />
+    <style>
+        body{
+            background:#f1f1f1;
+        }
+        .imp{
+            color:red;
+        }
+        
+
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+        }
+    </style>
+
+    <title>Cognitia 2k19</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h2 class="text-center text-primary display-4">Departmental Registration</h2>
+            <form action="/registration/departmental" method="POST">
+                <hr>
+                <!--The Team Details-->
+                <h3>Team Details</h3>
+                <div class="form-group">
+                    <label for="teamName"><span class="imp">*</span>Team Name</label>
+                    <input type="text" class="form-control" id="teamName" name="teams[teamName]"
+                        placeholder="Lannisters" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="teamEmail"><span class="imp">*</span>Email ID</label>
+                    <input type="email" class="form-control" id="teamEmail" name="teams[teamEmail]"
+                        placeholder="got@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="teamContact"><span class="imp">*</span>Mobile Number</label>
+                    <input type="text" class="form-control" id="teamContact" name="teams[teamContact]"
+                        placeholder="7005******" pattern="[1-9]{1}[0-9]{9}" required>
+                </div>
+                <div class="form-group">
+                    <label for="teamCollege"><span class="imp">*</span>College/University</label>
+                    <input type="text" class="form-control" id="teamCollege" name="teams[teamCollege]"
+                        placeholder="NIT Meghalaya" required>
+                </div>
+                <hr>
+                <h3>Team Member Detail's</h3>
+                <small>Team can have maximum of 2 members in total.</small>
+                <small>For individual based event,skip the member 2 detail's.</small>
+                <div class="form-group">
+                    <label for="teamLeader"><span class="imp">*</span>Member 1</label>
+                    <input type="text" class="form-control" id="teamLeader" name="teams[member1]"
+                        placeholder="John Bossy" required>
+                </div>
+                <div class="form-group">
+                    <label for="teamMember1">Member 2</label>
+                    <input type="text" class="form-control" id="teamMember1" name="teams[member2]"
+                        placeholder="" value=" ">
+                </div>
+                
+                <hr>
+                <!-- Event Details  -->
+                <h3>Event's Available</h3>
+                <small>Select the events that you wish to register</small>
+                <h3 class="mt-1">Electronics and Communication</h3>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event1" name="teams[ECE][event1]" value="The Ultimate Swot">
+                    <label class="form-check-label" for="event1">The Ultimate Swot</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event2" name="teams[ECE][event2]" value="Tricky Circuits">
+                    <label class="form-check-label" for="event2">Tricky Circuits</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event3" name="teams[ECE][event3]" value="Not So Fast">
+                    <label class="form-check-label" for="event3">Not So Fast</label>
+                </div>
+                <hr>
+                <h3 class="mt-1">Computer Science and Engineering</h3>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event4" name="teams[CSE][event1]"
+                        value="Crack-It">
+                    <label class="form-check-label" for="event4">Crack-It</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event5" name="teams[CSE][event2]" value="BiCode">
+                    <label class="form-check-label" for="event5">BiCode</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event6" name="teams[CSE][event3]" value="Blood Hound">
+                    <label class="form-check-label" for="event6">Blood Hound</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event7" name="teams[CSE][event4]" value="Code Fever">
+                    <label class="form-check-label" for="event7">Code Fever</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event8" name="teams[CSE][event5]" value="Beat The Q">
+                    <label class="form-check-label" for="event8">Beat the Q</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event9" name="teams[CSE][event6]" value="Megabyte">
+                    <label class="form-check-label" for="event9">MegaByte</label>
+                </div>
+               
+                <hr>
+                <h3 class="mt-1">Electrical Engineering</h3>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event10" name="teams[EEE][event1]" value="Fast and Furious">
+                    <label class="form-check-label" for="event10">Fast and Furious</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event11" name="teams[EEE][event2]" value="Inventolution">
+                    <label class="form-check-label" for="event11">Inventolution</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event12" name="teams[EEE][event3]" value="Electromania">
+                    <label class="form-check-label" for="event13">Electromania</label>
+                </div>
+                <hr>
+                <h3 class="mt-1">Mechanical Engineering</h3>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event14" name="teams[ME][event1]"
+                        value="Inertia">
+                    <label class="form-check-label" for="event14">Inertia</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event15" name="teams[ME][event2]" value="Load Upholder">
+                    <label class="form-check-label" for="event15">Load Upholder</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event16" name="teams[ME][event3]" value="Assembler">
+                    <label class="form-check-label" for="event16">Assembler</label>
+                </div>
+                <hr>
+                <h3 class="mt-1">Civil Engineering</h3>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event17" name="teams[CE][event1]" value="Bascule Bridge">
+                    <label class="form-check-label" for="event17">Bascule Bridge</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event18" name="teams[CE][event2]" value="Cantilever Structure">
+                    <label class="form-check-label" for="event18">Cantilever Structure</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event19" name="teams[CE][event3]" value="Bridge Simulator">
+                    <label class="form-check-label" for="event19">Bridge Simulator</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event20" name="teams[CE][event4]" value="AutoCad Drafting">
+                    <label class="form-check-label" for="event20">AutoCad Drafting</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event21" name="teams[CE][event5]" value="Palace of Cards">
+                    <label class="form-check-label" for="event21">Palace of Cards</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="event22" name="teams[CE][event6]" value="Quiz">
+                    <label class="form-check-label" for="event22">Quiz Competition</label>
+                </div>
+
+                <button type="submit" class="btn btn-success btn-outline rounded-top">Submit</button>
+            </form>
+        </div>
+    </div>
+<footer class="text-center mb-4">&copy; Cognitia 2019,NIT Meghalaya</footer>
+
+</body>
+
+
+</html>

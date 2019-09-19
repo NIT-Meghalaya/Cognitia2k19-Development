@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assests/css/bootstrap.min.css" />
+    <style>
+        body{
+            font-size:0.8rem;
+           
+        }
+    </style>
+
+
+    <title>Cognitia 2k19</title>
+</head>
+
+
+<body>
+    <div class="container-fluid">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">SL.NO.</th>
+                    <th scope="col">Registration Date</th>
+                    <th scope="col">Team Name</th>
+                    <th scope="col">Email ID</th>
+                    <th scope="col">Mobile Number</th>
+                    <th scope="col">Members List</th>
+                    <th scope="col">ECE</th>
+                    <th scope="col">CSE</th>
+                    <th scope="col">EEE</th>
+                    <th scope="col">ME</th>
+                    <th scope="col">CE</th>
+
+                </tr>
+            </thead>
+            <tbody>
+               
+                <% allTeams.forEach(function(team,index){ %>
+                <% let teamMembersLists=team.member1+","+team.member2 %>
+                <tr>
+                    <th scope="row"><%=index+1%></th>
+                    <td> <%=team.date.toDateString()%> </td>
+                    <td> <%=team.teamName%> </td>
+                    <td> <%=team.teamEmail%> </td>
+                    <td> <%=team.teamContact%> </td>
+                    <td> <%=teamMembersLists %> </td>
+                    <td> <%=Object.values(team.ECE) %></td>
+                    <td> <%=Object.values(team.CSE) %></td>
+                    <td> <%=Object.values(team.EEE) %></td>
+                    <td> <%=Object.values(team.ME) %></td>
+                    <td> <%=Object.values(team.CE) %></td>
+                </tr>
+                <% }); %>
+            </tbody>
+    </div>
+</body>
+<footer class="text-center mb-4">&copy; Cognitia 2019,NIT Meghalaya</footer>
+
+</html>

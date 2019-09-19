@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+    <link rel="stylesheet" href="/assests/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/stylesheet/robotics.css" />
+
+    <title>Cognitia 2k19</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <blockquote class="display-4">
+                <p>
+                    <i class="fa fa-quote-left"></i>
+                    We're fascinated by robots because they are a reflection of ourselves.
+                    <i class="fa fa-quote-right"></i>
+                </p>
+            </blockquote>
+        </div>
+        <h4 class="display-4 text-center text-primary" id="title">Events Available</h4>
+        <hr>
+
+        <!-- All Events Lists -->
+        <div class="row">
+            <div class=" col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card" style="width: 18rem;">
+                    <img src="/assests/images/robotics_thumbnail/RAT.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Race Against Time
+                            <button id="toggleIconRAT" class="btn btn-sm"><i class="fa fa-arrow-down"></i></button>
+                        </h5>
+                        <div id="disappearRAT" class="disappear">
+                            <p class="card-text">Design a remote controlled wireless robot that can travel through all
+                                turns of the
+                                track. The robot that will complete the race in least time with best accuracy will win
+                                the race.</p>
+                            <div class="d-flex justify-content-around">
+                                <a class="btn btn-primary btn-sm" href="/rules/robotics/RAT.pdf"
+                                    target="_blank">Details</a>
+                                <a class="btn btn-danger btn-sm" href="/registration/robotics"
+                                    target="_blank">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Second card -->
+            <div class=" col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card" style="width: 18rem;">
+                    <img src="/assests/images/robotics_thumbnail/GAT.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Goal Against Time
+                            <button id="toggleIconGAT" class="btn btn-sm toggleIcon"><i
+                                    class="fa fa-arrow-down"></i></button>
+                        </h5>
+                        <div id="disappearGAT" class="disappear">
+                            <p class="card-text">Design a remote controlled robot blending your technical intellect and
+                                innovative ideas capable to goal against time and
+                                fellow robots with maximum accuracy and in minimum time.</p>
+                            <div class="d-flex justify-content-around">
+                                <a class="btn btn-primary btn-sm" href="/rules/robotics/GAT.pdf"
+                                    target="_blank">Details</a>
+                                <a class="btn btn-danger btn-sm" href="/registration/robotics"
+                                    target="_blank">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Card -->
+            <div class="col-lg-4 col-md-6 col-sm-12  ">
+                <div class="card" style="width: 18rem;">
+                    <img src="/assests/images/robotics_thumbnail/RoboDiction.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">RoboDiction
+                            <button id="toggleIconDiction" class="btn btn-sm toggleIcon"><i
+                                    class="fa fa-arrow-down"></i></button>
+
+                        </h5>
+                        <div id="disappearDiction" class="disappear">
+                            <p class="card-text">Design a remote controlled wireless or wired bot which can reach its
+                                destination by tackling all different kinds of the obstacles coming in its way as
+                                quickly as possible.</p>
+                            <div class="d-flex justify-content-around">
+                                <a class="btn btn-primary btn-sm" href="/rules/robotics/Robodiction.pdf"
+                                    target="_blank">Details</a>
+                                <a class="btn btn-danger btn-sm" href="/registration/robotics"
+                                    target="_blank">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card" style="width: 18rem;">
+                    <img src="/assests/images/robotics_thumbnail/LFR.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Line Follower Robot
+                            <button id="toggleIconLFR" class="btn btn-sm toggleIcon"><i
+                                    class="fa fa-arrow-down"></i></button>
+                        </h5>
+                        <div id="disappearLFR" class="disappear">
+                            <p class="card-text">The Line Follower event is about designing a bot that will follow a
+                                black line along the track laid
+                                out,making smart decisions at crossroads and finishing the fastest.</p>
+                            <div class="d-flex justify-content-around">
+                                <a class="btn btn-primary btn-sm" href="/rules/robotics/LFR.pdf"
+                                    target="_blank">Details</a>
+                                <a class="btn btn-danger btn-sm" href="/registration/robotics"
+                                    target="_blank">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Second card -->
+            <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card" style="width: 18rem;">
+                    <img src="/assests/images/robotics_thumbnail/Rumble.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Robo Rumble
+                            <button id="toggleIconRumble" class="btn btn-sm toggleIcon"><i
+                                    class="fa fa-arrow-down"></i></button>
+                        </h5>
+                        <div id="disappearRumble" class="disappear">
+                            <p class="card-text">A Robotic event which derives its origin from a genre of professional
+                                wrestling in which there is only one way of
+                                eliminating the opponents- throwing them out of the ring.</p>
+                            <div class="d-flex justify-content-around">
+                                <a class="btn btn-primary btn-sm" href="/rules/robotics/RoboRumble.pdf"
+                                    target="_blank">Details</a>
+                                <a class="btn btn-danger btn-sm" href="/registration/robotics"
+                                    target="_blank">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Card -->
+            <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card" style="width: 18rem;">
+                    <img src="/assests/images/robotics_thumbnail/Prison.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Prison Breakout
+                            <button id="toggleIconPrison" class="btn btn-sm toggleIcon"><i
+                                    class="fa fa-arrow-down"></i></button>
+                        </h5>
+                        <div id="disappearPrison" class="disappear">
+                            <p class="card-text">Design a manual bot and help escape the autonomous bot from prison.
+                                Autonomous bot must follow black line and do the
+                                entrusted in gameplay.Help your bot friend escape and you win.</p>
+                            <div class="d-flex justify-content-around">
+                                <a class="btn btn-primary btn-sm" href="/rules/robotics/PrisonBreakout.pdf"
+                                    target="_blank">Details</a>
+                                <a class="btn btn-danger btn-sm" href="/registration/robotics"
+                                    target="_blank">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card" style="width: 18rem;">
+                    <img src="/assests/images/robotics_thumbnail/PickAndPlace.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Pick and Place
+                            <button id="toggleIconBridge" class="btn btn-sm toggleIcon"><i
+                                    class="fa fa-arrow-down"></i></button>
+                        </h5>
+                        <div id="disappearBridge" class="disappear">
+                            <p class="card-text">Design a wired or wireless manually controlled robot having the ability
+                                to lift the objects from one place to another using
+                                arm mechanism.All you have do is complete a structure.</p>
+                            <div class="d-flex justify-content-around">
+                                <a class="btn btn-primary btn-sm" href="/rules/robotics/PickAndPlace.pdf"
+                                    target="_blank">Details</a>
+                                <a class="btn btn-danger btn-sm" href="/registration/robotics"
+                                    target="_blank">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<footer class="text-center mb-4">&copy; Cognitia 2019,NIT Meghalaya</footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+    <script src="/scripts/robotics.js"></script>
+</body>
+
+</html>

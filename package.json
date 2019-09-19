@@ -1,0 +1,32 @@
+{
+  "name": "cognitia_2019",
+  "version": "1.0.0",
+  "description": "This is the website of cognitia 2019, annual technical festival of NIT Meghalaya",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node app.js"
+  },
+  "keywords": [
+    "Technical",
+    "Fest",
+    "Cognitia",
+    "TechFest",
+    "NIT",
+    "Meghalaya",
+    "Robotics",
+    "Departmental",
+    "Shillong",
+    "Meghalaya"
+  ],
+  "author": "Abhushan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.11",
+    "nodemailer": "^6.3.0"
+  }
+}
