@@ -7,19 +7,15 @@ const bodyParser = require("body-parser");
 const transporter = require("./models/transporter");
 
 
- mongoose.connect("mongodb://localhost/cognitia", { useNewUrlParser: true });
-
-
-
+// mongoose.connect("mongodb://localhost/cognitia", { useNewUrlParser: true });
 
 
 //-----------------------------------------------------------------------------------//
 
 app.set("view engine", "ejs");
-
 app.use(express.static("public"));
-
 app.use(bodyParser.urlencoded({ extended: true }));
+//---------------------------------------------------------------------------------------//
 
 app.use("/registration", require("./routes/forms/registrationForms"));
 app.use("/webdevteam", require("./routes/webdevteam/serviceSites"));
@@ -32,12 +28,8 @@ app.get("/", function (req, res) {
 });
 
 app.get("/timeline", function (req, res) {
-    res.render("timeline.ejs")
-})
-
-
-/////////////////////////////////////////////////////////////////////////
-
+    res.render("timeline")
+});
 
 //---------------------------------------------------------------------------------//
 const PORT = process.env.PORT || 3000;

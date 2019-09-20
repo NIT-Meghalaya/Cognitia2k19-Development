@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/assests/css/bootstrap.min.css" />
+    <style>
+        body {
+            background: #f1f1f1;
+        }
+
+        .imp {
+            color: red;
+        }
+
+        
+    </style>
+
+    <title>Cognitia'19</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h2 class="text-center text-primary display-4">TechStorm Registration</h2>
+            <form action="/registration/otherevents/techstorm" method="POST">
+                <hr>
+                <!--The Team Details-->
+                <h3>Team Details</h3>
+                <div class="form-group">
+                    <label for="teamName"><span class="imp">*</span>Team Name</label>
+                    <input type="text" class="form-control" id="teamName" name="teams[teamName]"
+                        placeholder="Lannisters" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="teamEmail"><span class="imp">*</span>Email ID</label>
+                    <input type="text" class="form-control" id="teamEmail" name="teams[teamEmail]"
+                        placeholder="got@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="teamContact"><span class="imp">*</span>Mobile Number</label>
+                    <input type="text" class="form-control" id="teamContact" name="teams[teamContact]"
+                        placeholder="7005******" pattern="[1-9]{1}[0-9]{9}" required>
+                </div>
+                <div class="form-group">
+                    <label for="teamCollege"><span class="imp">*</span>College/University</label>
+                    <input type="text" class="form-control" id="teamCollege" name="teams[teamCollege]"
+                        placeholder="NIT Meghalaya" required>
+                </div>
+                <hr>
+                <h3>Team Member Detail's</h3>
+                <small>TechStorm can have maximum of 5 and minimum of 3 members in total. </small>
+                
+                <div class="form-group">
+                    <label for="teamLeader"><span class="imp">*</span>Team Leader</label>
+                    <input type="text" class="form-control" id="teamLeader" name="teams[teamLeader]"
+                        placeholder="John Bossy" required>
+                </div>
+                <div class="form-group">
+                    <label for="teamMember1"><span class="imp">*</span>Member 1</label>
+                    <input type="text" class="form-control" id="teamMember1" name="teams[teamMember1]" required>
+                </div>
+                <div class="form-group">
+                    <label for="teamMember2"><span class="imp">*</span>Member2</label>
+                    <input type="text" class="form-control" id="teamMember2" name="teams[teamMember2]" required>
+                </div>
+                <div class="form-group">
+                    <label for="teamMember3">Member 3</label>
+                    <input type="text" class="form-control" id="teamMember3" name="teams[teamMember3]" value=" ">
+                </div>
+                <div class="form-group">
+                    <label for="teamMember4">Member 4</label>
+                    <input type="text" class="form-control" id="teamMember4" name="teams[teamMember4]" value=" ">
+                </div>
+                <hr>
+                <!-- Event Details  -->
+                <button type="submit" class="btn btn-success btn-outline rounded-top">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer class="text-center mb-4">&copy; Cognitia 2019,NIT Meghalaya</footer>
+
+</body>
+
+
+</html>
