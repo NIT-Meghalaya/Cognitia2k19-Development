@@ -9,14 +9,25 @@ a:visited{
 .thumbs{
   
     height:200px;
+    transition: transform .2s; 
 }
 h6{
     padding-top:55px;
+    color:black;
+}
+#color1{
+    background:#e3c878;
 }
 
-.thumbs:hover{
-    border:3px solid purple;
+#color2{
+    background:#be6283;
 }
+.thumbs:hover{
+    border:2px solid white;
+    opacity:0.8;
+   transform: scale(0.9);
+}
+
 a{
     color:black;
 }
