@@ -31,6 +31,9 @@ app.get("/timeline", function (req, res) {
     res.render("timeline")
 });
 
+app.get("/team", function (req, res) {
+    res.render("team");
+})
 //---------------------------------------------------------------------------------//
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, function () {
