@@ -74,23 +74,19 @@ h1{
 }
 
 
-@media(max-width:800px){
-    .fa-quote-left, .fa-quote-right{
-        font-size: 3rem;
-    }
-    .display-4 p{
-        font-size: 3rem;
-    }
-}
 
-/* -------------------------------------------------- */
-#mainNav{
-     background: #360033;  
+/* ------------------------ NAV -------------------------- */
+
+.myDiv{
+    display:block;
+    height:auto;
+    background: #360033;
     background: -webkit-linear-gradient(to left, #0b8793, #360033); 
     background: linear-gradient(to left, #0b8793, #360033);  
+}
+#mainNav{
     padding:0;
     margin:0;
-    height:11vh;
     margin-bottom:2rem;
 }
 
@@ -104,10 +100,10 @@ h1{
     width: 3.5rem;
     height: 3.5rem;
     margin: 0;
-    padding-left:6px;
+    margin-left:1rem;
 }
-.navbar-toggler-icon{
-    padding-right: 6px;
+.navbar-toggler{
+    margin-right: 1rem;
 }
 
 .navbar-dark .navbar-brand {
@@ -124,33 +120,34 @@ h1{
     font-size: 1rem;
   }
 
+  @media screen and (max-width: 800px){
 
-@media screen and (max-width: 800px){
-#mainNav{
-    height:15vh;
+    #navbarResponsive{
+        width:100%;
+        box-sizing: border-box;
+        padding:6px;
+        margin:0;
+        background: #360033;  
+        background: -webkit-linear-gradient(to left, #0b8793, #360033); 
+        background: linear-gradient(to left, #0b8793, #360033);  
+    }
 }
-#navbarResponsive{
-    width:100%;
-    box-sizing: border-box;
-    padding:6px;
-    margin:0;
-     background: #360033;  
-    background: -webkit-linear-gradient(to left, #0b8793, #360033); 
-    background: linear-gradient(to left, #0b8793, #360033);  
-    opacity: 0.8;
-}
-  }
+
+
+  /*---------------------- FOOTER -------------------------*/
 
 footer{
-      padding-top:2%;
-     background: #360033;  
+    padding-top:2%;
+    background: #360033;  
     background: -webkit-linear-gradient(to left, #0b8793, #360033); 
     background: linear-gradient(to left, #0b8793, #360033);
     height:12vh;
     color:whitesmoke;
-  }
+}
 
-  @media(max-width:500px){
+
+
+  @media screen and (max-width:500px){
       .card{
           margin-top:2%;
       }
@@ -160,3 +157,12 @@ footer{
       }
   }
 
+
+  @media screen and (max-width:800px){
+    .fa-quote-left, .fa-quote-right{
+        font-size: 3rem;
+    }
+    .display-4 p{
+        font-size: 3rem;
+    }
+}
