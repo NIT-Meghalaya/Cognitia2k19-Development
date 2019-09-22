@@ -3,12 +3,9 @@
             padding: 0;
             background:#f1f1f1;
             height:100vh;
-           
 
         }
-.display-2{
-     font-family: 'Mansalva', cursive;
-}
+
 
 .swiper-container {
             width: 100%;
@@ -42,8 +39,5 @@ footer{
   @media(max-width:500px){
      footer{
          padding-top:7%;
-     }
-     .display-2{
-         font-size:4rem;
      }
   }

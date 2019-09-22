@@ -9,7 +9,7 @@ const transporter = require("./models/transporter");
 
 //  mongoose.connect("mongodb://localhost/cognitia", { useNewUrlParser: true });
 
-
+mongoose.connect("mongodb+srv://abhu-a-j:abhu-a-j_1998@cognitia2019-jo2lm.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true });
 //-----------------------------------------------------------------------------------//
 
 app.set("view engine", "ejs");
