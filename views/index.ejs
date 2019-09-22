@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Noto+Sans|Alegreya+Sans:300|Roboto+Condensed:300|Dosis:300|Nunito|Open+Sans|PT+Sans|Poppins|Raleway|Roboto|Krub&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Abel|Chilanka|Rajdhani&display=swap" rel="stylesheet">
@@ -14,9 +15,12 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     <link rel="stylesheet" href="/assests/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/stylesheet/index.css" />
-
-    <title>Cognitia 2k19</title>
+  
+    <link rel="stylesheet" href="stylesheet/index.css" />
+    
+   <link rel="icon"  href="/assests/images/icon_128.ico">
+    <title>Cognitia'19</title>
+    
     
 </head>
 
@@ -24,64 +28,75 @@
 
 
     <section id="firstPart">
-
+       
         <div class="myDiv">
-            <div class="bg"></div>
             <nav class="navbar navbar-expand-lg navbar-dark py-3" id="mainNav">
                 <div class="container">
-                    <a class="navbar-brand js-scroll-trigger" href="/">Cognitia</a>
+                    <a href="/"><img src="assests/images/cognitia.png" width=200px></a>
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/events/robotics">Robotics</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/events/departmental">Departmental</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/events/otherevents">Other Events</a>
-                            </li>
             
-                        </ul>
                         <!-- Right Side Nav elements -->
                         <ul class="navbar-nav ml-auto my-2 my-lg-0 ">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/registration">Registration</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#about">About</a>
-                            </li>
-                           
+            
+            
+                            <div class="dropdown">
+                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Events
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="/events/robotics">Robotics</a>
+                                    <a class="dropdown-item" href="/events/departmental">Departmental</a>
+                                    <a class="dropdown-item" href="/events/otherevents">Others</a>
+                                </div>
+                            </div>
+            
+            
                             <li class="nav-item">
                                 <a class="nav-link " href="/timeline">Timeline</a>
                             </li>
+            
+                            <li class="nav-item">
+                                <a class="nav-link " href="/team">Team</a>
+                            </li>
+            
+                            <li class="nav-item">
+                                <a class="nav-link " href="#contact">Contact</a>
+                            </li>
+            
+                            <li class="nav-item">
+                                <a class="nav-link" href="/registration">Register</a>
+                            </li>
+            
                         </ul>
                     </div>
                 </div>
             </nav>
+            <div class="bg"></div>
+            
             <div class="container" id="main-text">
                     <h1 id="heading" class="display-1 text-center">Cognitia'19</h1>
-                    <h5 id="tagline"class="text-center">-The Annual TechFest of NIT Meghalaya</h5>
+                    <h5 id="tagline"class="text-center">The Annual TechFest of NIT Meghalaya</h5>
 
                    
             </div>
             <div class="container d-none-sm d-block-lg" id="story">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-4" id="rowcell">
                         <p class="value">250+</p>
                         <p class="context">Students</p>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4" id="rowcell2">
                         <p class="value">30+</p>
                         <p class="context">Events</p>
                     </div>
                     <div class="col-sm-4">
-                        <p class="value">2,00,000+</p>
+                        <p class="value">₹2,00,000+</p>
                         <p class="context">Cash Prizes</p>
                     </div>
                 </div>
@@ -92,15 +107,15 @@
     </section>
     
     <section id="about" class="mt-5">
-        <div class="container">
-                <h1 class="display-3 text-center" id="aboutus" data-aos="fade-down"data-aos-easing="linear"
-                    data-aos-duration="1000">
+        <div class="container" data-aos="fade-up" data-aos-easing="linear"
+        data-aos-duration="1000">
+                <h1 class="display-3 text-center" id="aboutus" >
                     About Us
                 </h1>
-                <p class="text-left pt-1" id="info" data-aos="zoom-in"data-aos-duration="2000"><span id="firstLetter">C</span>
-                OGNITIA is annual technical festival of National Institute of Technology,Meghalaya.
+                <p class="text-justify pt-4" id="info"><span id="firstLetter">C</span>
+                OGNITIA is annual technical festival of National Institute of Technology, Meghalaya.
                 Cognitia literally means  "I think therefore I am" and is a celebration of the creative spirit and youthful energy
-                inherent in the country's college students. This time it's a whole new game, it's not about the victors or the
+                inherent in the country's college students. This time it's a whole new game. It's not about the victors or the
                 vanquished, it's not about glory or defeat. It's about conquering your demons, it's about upping yourself, it's about
                 the quest for excellence. Cognitia has gradually diversified into an organisation that apart from showcasing the
                 pinnacle of technical advancement, strives for betterment of the society by developing an inclination of youth populace
@@ -112,49 +127,52 @@
     </section>
 
 
-    <section id="contact" class="mt-4">
-        <div class="container">
-            <h1 class="display-3 text-center mt-2 mb-4" data-aos="fade-down"data-aos-easing="linear"
-                    data-aos-duration="1000" id="team">
-                    The Team
+    <section id="contact" class="mt-5 pt-5">
+        <div class="container pb-5" data-aos="fade-up" data-aos-easing="linear"
+        data-aos-duration="800">
+            <h1 class="display-3 text-center mt-2 mb-5" id="team">
+                    Contact Us
             </h1>
             <div class="row" id="contactus">
                 <div class="col-sm-6">
-                    <div class="card" id="GS1" style="width:15rem;" div data-aos="fade-right" data-aos-duration="2000">
+                    <div class="card" id="GS2" style="width:15rem;">
                         <img src="/assests/images/head1.jpg" class="card-img-top round">
                         <div class="card-body">
-                            <h3 class="card-title text-left">GS Technical-I</h3>
+                            <h3 class="card-title">GS Technical-I</h3>
                             <h5>Deepak Kumar Sah</h5>
-                            <p class="card-text"><i class="fa fa-phone-square"></i>
+                            <h6 class="card-text"><i class="fa fa-phone-square"></i>
                                 9113143598
-                            </p>
-                            <p class="card-text"><i class="fa fa-envelope-square"></i>
+                            </h6>
+                            <h6 class="card-text"><i class="fa fa-envelope-square"></i>
                                 b16me023@nitm.ac.in
-                            </p>
+                            </h6>
                         </div>
                     </div>
                 </div>
                 
                 <div class="col-sm-6">
-                    <div class="card" id="GS2" style="width:15rem;" div data-aos="fade-left" data-aos-duration="2000">
+                    <div class="card" id="GS2" style="width:15rem;" >
                         <img src="/assests/images/head2.jpg" class="card-img-top round">
                         <div class="card-body">
-                            <h3 class="card-title text-left">GS Technical-II</h3>
+                            <h3 class="card-title">GS Technical-II</h3>
                             <h5>Priyesh Singh</h5>
-                            <p class="card-text"><i class="fa fa-phone-square"></i>
+                            <h6 class="card-text"><i class="fa fa-phone-square"></i>
                                 8707012402
-                            </p>
-                            <p class="card-text"><i class="fa fa-envelope-square"></i>
+                            </h6>
+                            <h6 class="card-text"><i class="fa fa-envelope-square"></i>
                                 b17ce028@nitm.ac.in
-                            </p>
+                            </h6>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container mt-5 mb-5">
-            <h1 class="display-3 text-center mt-3" id="visittag" data-aos="fade-down"data-aos-easing="linear"
-                    data-aos-duration="1000">Visit Us</h1>
+    </section>
+
+    <section id="visit">
+        <div class="container pt-5 pb-5" data-aos="fade-up"data-aos-easing="linear"
+        data-aos-duration="600">
+            <h1 class="display-3 pb-5 text-center" id="visittag" >Visit Us</h1>
             <div class="row" id=visitus>
                 <div class="col-12">
                     <iframe
@@ -165,15 +183,20 @@
             </div>
         </div>
     </section>
-    <hr>
 
-<footer class="text-center mb-4">
-    <span class="socials">
-        <a href="https://www.facebook.com/NITMcognitia/" class="fa fa-facebook" target="_blank"></a>
-        <a href="#!" class="fa fa-play" target="_blank"></a>
-        <a href="https://instagram.com/cognitia_nitm?igshid=cgv6r2lamk9c"class="fa fa-instagram" target="_blank"></a>
-    </span>
-    <p class="mt-2">&copy; Cognitia 2019,NIT Meghalaya</p>
+
+<footer class="pt-4 pb-2">
+    <div class="footerimg">
+        <img src="assests/images/cognitia.png" width=180px>
+        <span class="socials">
+                <a href="https://instagram.com/cognitia_nitm?igshid=cgv6r2lamk9c"class="fa fa-instagram" target="_blank"></a>
+                <a href="#!" class="fa fa-youtube" target="_blank"></a>
+                <a href="https://www.facebook.com/NITMcognitia/" class="fa fa-facebook" target="_blank"></a>
+            
+            
+        </span>
+    </div>
+    <p >&copy; Cognitia 2019, NIT Meghalaya</p>
 </footer>
 
     <!--Scripts -->

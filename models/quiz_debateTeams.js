@@ -8,13 +8,11 @@ let roboticsSchema = new mongoose.Schema({
     teamEmail: String,
     teamContact: String,
     teamCollege: String,
-    teamLeader: String,
     teamMember1: String,
-  
-
+    teamMember2: String,
     events: {
         event1: String,
-        event2: String,
+        event2: String
     }
 
 });

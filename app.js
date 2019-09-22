@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 const transporter = require("./models/transporter");
 
 
-// mongoose.connect("mongodb://localhost/cognitia", { useNewUrlParser: true });
+//  mongoose.connect("mongodb://localhost/cognitia", { useNewUrlParser: true });
 
 
 //-----------------------------------------------------------------------------------//
@@ -33,7 +33,7 @@ app.get("/timeline", function (req, res) {
 
 app.get("/team", function (req, res) {
     res.render("team");
-})
+});
 //---------------------------------------------------------------------------------//
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, function () {

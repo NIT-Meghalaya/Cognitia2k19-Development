@@ -207,6 +207,7 @@ router.post("/otherevents/quizanddebate", function (req, res) {
         }
         else {
 
+            let eventsRegistered = Object.values(team.events);
             let emailMsg = `<h1>Cognitia 2k19</h1>
                 <p>Greetings from the Cognitia's Quizzing and Debating Team</p>
              <p>We are very excited and thankful for you being a part of Cognitia 2k19.</p>
@@ -215,13 +216,11 @@ router.post("/otherevents/quizanddebate", function (req, res) {
                     <li> TeamName: ${team.teamName}</li>
                     <li>Team Contact Number: ${team.teamContact}</li>
                     <li>Team Email Contact: ${team.teamEmail}</li>
-                    <li>Team Leader Name: </li>
-                    <li>Team Member(s): ${team.teamLeader} ${team.teamMember1}</li>
-                    <li>Events Registered: ${team.events.event1} ${team.events.event2}
-                    
+                    <li>Team Member(s): ${team.teamMember1} ${team.teamMember2}</li>
+                    <li>Events Registered: ${eventsRegistered}
                 </ul>
             <p>We wish you all the very best. May the best team win! </p>
-            <small>Incase of any discrepancydecrepencies immediately contact at <strong>cognitiawebdev@gmail.com</strong></small>`;
+            <small>Incase of any discrepancy immediately contact at <strong>cognitiawebdev@gmail.com</strong></small>`;
             let mailOptions = {
                 from: process.env.EMAIL,
                 to: team.teamEmail,
@@ -248,19 +247,21 @@ router.post("/otherevents/gaming", function (req, res) {
             console.log(err);
         }
         else {
-            
+            let groupEvents = Object.values(team.group);
+            let individualEvents = Object.values(team.individual);
             let emailMsg = `<h1>Cognitia 2k19</h1>
                 <p>Greetings from the Cognitia's Gaming Team!</p>
-             <p>We are very excited and thankful for you being a part of Cognitia 2k19.</p>
+                <p>We are very excited and thankful for you being a part of Cognitia 2k19.</p>
                 </p>Please check details about your registration:</p>
                 <ul>
                     <li> TeamName: ${team.teamName}</li>
                     <li>Team Contact Number: ${team.teamContact}</li>
                     <li>Team Email Contact: ${team.teamEmail}</li>
                     <li>Player's Registered: ${team.teamLeader} ${team.teamMember1} ${team.teamMember2} ${team.teamMember3} ${team.teamMember4}</li>
-                    <li>Group Events: ${team.group.event1} ${team.group.event2}</li>
-                    <li>Individual Events: ${team.individual.event1}</li>
+                    <li>Group Events: ${groupEvents} </li>
+                    <li>Individual Events: ${individualEvents}</li>
                 </ul>
+            <strong>Kindly complete your payments at the hospitality desks.<strong>  
             <p>We wish you all the very best. May the best team win! </p>
             <small>Incase of any discrepancy immediately contact at <strong>cognitiawebdev@gmail.com</strong></small>`;
             let mailOptions = {

@@ -1,33 +1,43 @@
  body {
-                background: #F0C27B;  
-                background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  
-                background: linear-gradient(to right, #4B1248, #F0C27B); 
+            color: #000;
+            padding: 0;
+            background:#f1f1f1;
+            height:100vh;
 
-                background: #232526;  /* fallback for old browsers */
-                background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-                background: #16222A;  /* fallback for old browsers */
-                background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
-                font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-                font-size: 14px;
-                color: #000;
-                margin-top:10%;
-                padding: 0;
         }
- .swiper-container {
+
+
+.swiper-container {
             width: 100%;
-            padding-top: 50px;
+            padding-top: 3%;
             padding-bottom: 50px;
         }
 
 .swiper-slide {
+            margin-top:3%;
             background-position: center;
             background-size: cover;
             width: 300px;
             height: 300px;
         }
+
+footer{
+      padding-top:2%;
+     background: #360033;  
+    background: -webkit-linear-gradient(to left, #0b8793, #360033); 
+    background: linear-gradient(to left, #0b8793, #360033);
+    height:13vh;
+    color:whitesmoke;
+  }
+
+
+    @media(max-width:800px){
+     footer{
+         padding-top:5%;
+     }
+  }
+  @media(max-width:500px){
+     footer{
+         padding-top:7%;
+     }
+  }
