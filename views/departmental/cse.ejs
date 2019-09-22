@@ -17,15 +17,15 @@
 </head>
 
 
-<body>
+<body onload="loadfunc()">
+    <div id="preload"></div>
     <div class="myDiv">
         <nav class="navbar navbar-expand-lg navbar-dark py-3" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="/">
                     <img class="logo " src="/assests/images/svg/logo.svg" />
                 </a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarResponsive">
@@ -68,11 +68,9 @@
                 <hr>
                 <h2 class="text-left mt-3">Who are we</h2>
                 <p>
-                    We are a cohesive,smart,progressive and diligent team that loves to solve puzzles
-                    and find out the rationale behind it all while keeping things simple.
+                    We are a cohesive,smart,progressive and diligent team that loves to solve puzzles and find out the rationale behind it all while keeping things simple.
                 </p>
-                From coding problems to technical quizzes, we design,build and ensure that our
-                events work your grey matter and bring out the inner engineer in you.
+                From coding problems to technical quizzes, we design,build and ensure that our events work your grey matter and bring out the inner engineer in you.
                 <p>
                 </p>
             </div>
@@ -110,14 +108,11 @@
                                 <h5 class="card-title text-center">Crack-It
                                 </h5>
                                 <div id="disappearCrack" class="disappear">
-                                    <p class="card-text">Let’s face it, debugging code is difficult. Well, this event
-                                        is
-                                        all debugging.
+                                    <p class="card-text">Let’s face it, debugging code is difficult. Well, this event is all debugging.
 
                                     </p>
                                     <div class="d-flex justify-content-around">
-                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/cse/CrackIt.pdf"
-                                            target="_blank">Details</a>
+                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/cse/CrackIt.pdf" target="_blank">Details</a>
                                         <a class="btn btn-danger btn-sm" href="/registration/departmental" target="_blank">Register</a>
                                     </div>
                                 </div>
@@ -134,8 +129,7 @@
                                     <p class="card-text">You and your best buddy: 4 Programming questions - 1 hour.
                                     </p>
                                     <div class="d-flex justify-content-around">
-                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/cse/BiCode.pdf"
-                                            target="_blank">Details</a>
+                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/cse/BiCode.pdf" target="_blank">Details</a>
                                         <a class="btn btn-danger btn-sm" href="/registration/departmental" target="_blank">Register</a>
                                     </div>
                                 </div>
@@ -152,8 +146,7 @@
                                     <p class="card-text">An online, level-based, treasure hunt competition
                                     </p>
                                     <div class="d-flex justify-content-around">
-                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/cse/BloodHound.pdf"
-                                            target="_blank">Details</a>
+                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/cse/BloodHound.pdf" target="_blank">Details</a>
                                         <a class="btn btn-danger btn-sm" href="/registration/departmental" target="_blank">Register</a>
                                     </div>
                                 </div>
@@ -167,12 +160,10 @@
                                 <h5 class="card-title text-center">CodeFever
                                 </h5>
                                 <div id="disappearCodeFever" class="disappear">
-                                    <p class="card-text">An individual coding competition hosted on one of the popular
-                                        coding competition platforms.
+                                    <p class="card-text">An individual coding competition hosted on one of the popular coding competition platforms.
                                     </p>
                                     <div class="d-flex justify-content-around">
-                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/cse/CodeFever.pdf"
-                                            target="_blank">Details</a>
+                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/cse/CodeFever.pdf" target="_blank">Details</a>
                                         <a class="btn btn-danger btn-sm" href="/registration/departmental" target="_blank">Register</a>
                                     </div>
                                 </div>
@@ -189,8 +180,7 @@
                                     <p class="card-text">A quiz tailored to test one’s aptitude and computer knowledge.
                                     </p>
                                     <div class="d-flex justify-content-around">
-                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/cse/BeatTheQ.pdf"
-                                            target="_blank">Details</a>
+                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/cse/BeatTheQ.pdf" target="_blank">Details</a>
                                         <a class="btn btn-danger btn-sm" href="/registration/departmental" target="_blank">Register</a>
                                     </div>
                                 </div>
@@ -207,8 +197,7 @@
                                     <p class="card-text">A Quiz tailored to test one’s programming acumen
                                     </p>
                                     <div class="d-flex justify-content-around">
-                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/cse/MegaByte.pdf"
-                                            target="_blank">Details</a>
+                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/cse/MegaByte.pdf" target="_blank">Details</a>
                                         <a class="btn btn-danger btn-sm" href="/registration/departmental" target="_blank">Register</a>
                                     </div>
                                 </div>
@@ -223,12 +212,17 @@
     </div>
     <footer class="text-center ">&copy; Cognitia 2019,NIT Meghalaya</footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous">
-        </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="/scripts/cse.js"></script>
+    <script>
+        var preloader = document.getElementById('preload');
+
+        function loadfunc() {
+            preloader.style.display = 'none';
+        }
+    </script>
 
 </body>
 

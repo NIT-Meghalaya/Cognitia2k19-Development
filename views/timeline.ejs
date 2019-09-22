@@ -8,8 +8,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
 
@@ -21,16 +20,14 @@
     <title>Cognitia'19</title>
 </head>
 
-<body>
-
+<body onload="loadfunc()">
+    <div id="preload"></div>
     <div class="container">
-       
         <div class="jumbotron mt-4">
-           
+
             <blockquote class="display-4">
                 <p>
-                    <i class="fa fa-quote-left"></i>
-                    Visit us on the largest technical celebration in the state of Meghalaya.
+                    <i class="fa fa-quote-left"></i> Visit us on the largest technical celebration in the state of Meghalaya.
                     <i class="fa fa-quote-right"></i>
                 </p>
             </blockquote>
@@ -73,6 +70,13 @@
 
     </div>
     <script src="/scripts/timeline.js"></script>
+    <script>
+        var preloader = document.getElementById('preload');
+
+        function loadfunc() {
+            preloader.style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>

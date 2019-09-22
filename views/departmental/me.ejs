@@ -8,49 +8,48 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
     <link rel="stylesheet" href="/assests/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/stylesheet/departmental.css">
-  
-    
+
+
     <link rel="icon" href="/assests/images/icon_128.ico">
     <title>Cognitia'19</title>
 </head>
 
 
-<body>
-        <div class="myDiv">
-                <nav class="navbar navbar-expand-lg navbar-dark py-3" id="mainNav">
-                    <div class="container">
-                            <a class="navbar-brand js-scroll-trigger" href="/">
-                                <img class="logo "src = "/assests/images/svg/logo.svg"/>
-                            </a>
-                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                            aria-label="Toggle navigation">
+<body onload="loadfunc()">
+    <div id="preload"></div>
+    <div class="myDiv">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="/">
+                    <img class="logo " src="/assests/images/svg/logo.svg" />
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse " id="navbarResponsive">
-                            <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/events/robotics">Robotics</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/events/otherevents">Other Events</a>
-                                </li>
-        
-                            </ul>
-                            <!-- Right Side Nav elements -->
-                            <ul class="navbar-nav ml-auto my-2 my-lg-0 ">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/registration">Registration</a>
-                                </li>
-        
-                                <li class="nav-item">
-                                    <a class="nav-link " href="/timeline">Timeline</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+                <div class="collapse navbar-collapse " id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/events/robotics">Robotics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/events/otherevents">Other Events</a>
+                        </li>
+
+                    </ul>
+                    <!-- Right Side Nav elements -->
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/registration">Registration</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="/timeline">Timeline</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </div>
     <div class="container">
         <div class="row mt-3">
             <div class="col-lg-3">
@@ -66,13 +65,11 @@
                 <h1 class="display-4 text-left">Mechanical Engineering</h1>
                 <hr>
                 <h2 class="text-left mt-3">Who are we</h2>
-                <p>We believe in making a difference. Our career center on creating technologies
-                    to meet human needs.Virtually every possible product has been touched by us.
+                <p>We believe in making a difference. Our career center on creating technologies to meet human needs.Virtually every possible product has been touched by us.
                 </p>
-                
+
                 <p>
-                    We combine creativity, knowledge and analytical tools to complete the difficult 
-                    task of shaping an idea into reality. There is no real limit for a freshly minted Mechnical Engineer.
+                    We combine creativity, knowledge and analytical tools to complete the difficult task of shaping an idea into reality. There is no real limit for a freshly minted Mechnical Engineer.
                 </p>
             </div>
         </div>
@@ -112,12 +109,10 @@
                                 <div id="disappearInertia" class="disappear">
                                     <p class="card-text">Let's battle it out in Quiz Competition
                                     </p>
-                                <div class="d-flex justify-content-around">
-                                    <a class="btn btn-primary btn-sm" href="/rules/departmental/me/Inertia.pdf"
-                                        target="_blank">Details</a>
-                                    <a class="btn btn-danger btn-sm" href="/registration/departmental"
-                                        target="_blank">Register</a>
-                                </div>
+                                    <div class="d-flex justify-content-around">
+                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/me/Inertia.pdf" target="_blank">Details</a>
+                                        <a class="btn btn-danger btn-sm" href="/registration/departmental" target="_blank">Register</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -132,12 +127,10 @@
                                 <div id="disappearLoad" class="disappear">
                                     <p class="card-text">Build a structure which can withstand maximum load!
                                     </p>
-                                <div class="d-flex justify-content-around">
-                                    <a class="btn btn-primary btn-sm" href="/rules/departmental/me/LoadUpholder.pdf"
-                                        target="_blank">Details</a>
-                                    <a class="btn btn-danger btn-sm" href="/registration/departmental"
-                                        target="_blank">Register</a>
-                                </div>
+                                    <div class="d-flex justify-content-around">
+                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/me/LoadUpholder.pdf" target="_blank">Details</a>
+                                        <a class="btn btn-danger btn-sm" href="/registration/departmental" target="_blank">Register</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -151,12 +144,10 @@
                                 <div id="disappearAssembler" class="disappear">
                                     <p class="card-text">Assemble a bicycle on the spot!
                                     </p>
-                                <div class="d-flex justify-content-around">
-                                    <a class="btn btn-primary btn-sm" href="/rules/departmental/me/Assembler.pdf"
-                                        target="_blank">Details</a>
-                                    <a class="btn btn-danger btn-sm" href="/registration/departmental"
-                                        target="_blank">Register</a>
-                                </div>
+                                    <div class="d-flex justify-content-around">
+                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/me/Assembler.pdf" target="_blank">Details</a>
+                                        <a class="btn btn-danger btn-sm" href="/registration/departmental" target="_blank">Register</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -167,18 +158,20 @@
 
     </div>
 
-<footer class="text-center">&copy; Cognitia 2019,NIT Meghalaya</footer>
+    <footer class="text-center">&copy; Cognitia 2019,NIT Meghalaya</footer>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
     </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-     crossorigin="anonymous"></script>
-<script src="/scripts/me.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/scripts/me.js"></script>
+    <script>
+        var preloader = document.getElementById('preload');
+
+        function loadfunc() {
+            preloader.style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>

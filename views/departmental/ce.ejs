@@ -16,14 +16,14 @@
 </head>
 
 
-<body>
+<body onload="loadfunc()">
+    <div id="preload"></div>
     <nav class="navbar navbar-expand-lg navbar-dark py-3" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="/">
                 <img class="logo " src="/assests/images/svg/logo.svg" />
             </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse " id="navbarResponsive">
@@ -65,11 +65,9 @@
                 <hr>
                 <h2 class="text-left mt-3">Who are we</h2>
                 <p>
-                    We as the department of Civil Engineering explore the enormous domains of material
-                    science , structures, geotechnology, transportation and water resources.
+                    We as the department of Civil Engineering explore the enormous domains of material science , structures, geotechnology, transportation and water resources.
                 </p>
-                From Contruction, Geotechnical challenges to solving problems involving structures
-                and transportation, we promise to spark the civil engineer inside you.
+                From Contruction, Geotechnical challenges to solving problems involving structures and transportation, we promise to spark the civil engineer inside you.
                 <p>
                 </p>
             </div>
@@ -107,12 +105,10 @@
                                 <h5 class="card-title text-center">Bascule Bridge
                                 </h5>
                                 <div id="disappearBascule" class="disappear">
-                                    <p class="card-text">Judge the capability of allowing the passage of movement of
-                                        object through the bridge median.
+                                    <p class="card-text">Judge the capability of allowing the passage of movement of object through the bridge median.
                                     </p>
                                     <div class="d-flex justify-content-around">
-                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/ce/Bascule.pdf"
-                                            target="_blank">Details</a>
+                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/ce/Bascule.pdf" target="_blank">Details</a>
                                         <a class="btn btn-danger btn-sm" href="/registration/departmental" target="_blank">Register</a>
                                     </div>
                                 </div>
@@ -126,13 +122,10 @@
                                 <h5 class="card-title text-center">Cantilever
                                 </h5>
                                 <div id="disappearCantilever" class="disappear">
-                                    <p class="card-text">An event that tests the capability of cantilevered structure
-                                        over
-                                        its longitudinal length and stability made with plastic straws.
+                                    <p class="card-text">An event that tests the capability of cantilevered structure over its longitudinal length and stability made with plastic straws.
                                     </p>
                                     <div class="d-flex justify-content-around">
-                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/ce/Cantilever.pdf"
-                                            target="_blank">Details</a>
+                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/ce/Cantilever.pdf" target="_blank">Details</a>
                                         <a class="btn btn-danger btn-sm" href="/registration/departmental" target="_blank">Register</a>
                                     </div>
                                 </div>
@@ -146,13 +139,10 @@
                                 <h5 class="card-title text-center">Bridge Simulator
                                 </h5>
                                 <div id="disappearSimulator" class="disappear">
-                                    <p class="card-text">Real time simulator based on android,
-                                        hypothetical support conditions,
-                                        materials, load bearing and cost, aggregate to produce the best design.
+                                    <p class="card-text">Real time simulator based on android, hypothetical support conditions, materials, load bearing and cost, aggregate to produce the best design.
                                     </p>
                                     <div class="d-flex justify-content-around">
-                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/ce/Simulator.pdf"
-                                            target="_blank">Details</a>
+                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/ce/Simulator.pdf" target="_blank">Details</a>
                                         <a class="btn btn-danger btn-sm" href="/registration/departmental" target="_blank">Register</a>
                                     </div>
                                 </div>
@@ -166,12 +156,10 @@
                                 <h5 class="card-title text-center">AutoCad Drafting
                                 </h5>
                                 <div id="disappearAutocad" class="disappear">
-                                    <p class="card-text">Computer aided design of typical sections and plans,
-                                        competed over the accuracy of drafting and explanation.
+                                    <p class="card-text">Computer aided design of typical sections and plans, competed over the accuracy of drafting and explanation.
                                     </p>
                                     <div class="d-flex justify-content-around">
-                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/ce/AutoCad.pdf"
-                                            target="_blank">Details</a>
+                                        <a class="btn btn-primary btn-sm" href="/rules/departmental/ce/AutoCad.pdf" target="_blank">Details</a>
                                         <a class="btn btn-danger btn-sm" href="/registration/departmental" target="_blank">Register</a>
                                     </div>
                                 </div>
@@ -185,9 +173,7 @@
                                 <h5 class="card-title text-center">Palace of Cards
                                 </h5>
                                 <div id="disappearPOC" class="disappear">
-                                    <p class="card-text">A fun event that lifts up the heights of card arrangement and
-                                        concentric
-                                        analysis, requiring great patience and technique.
+                                    <p class="card-text">A fun event that lifts up the heights of card arrangement and concentric analysis, requiring great patience and technique.
                                     </p>
                                     <div class="d-flex justify-content-around">
                                         <a class="btn btn-primary btn-sm" href="/rules/departmental/ce/POC.pdf" target="_blank">Details</a>
@@ -222,15 +208,18 @@
     </div>
 
     <footer class="text-center">&copy; Cognitia 2019,NIT Meghalaya</footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous">
-        </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>   
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="/scripts/ce.js"></script>
+    <script>
+        var preloader = document.getElementById('preload');
+
+        function loadfunc() {
+            preloader.style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>

@@ -1,130 +1,141 @@
 /* ----------------- NAV ------------------------*/
-.myDiv{
-    display:block;
-    height:auto;
+
+#preload {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url("http://i.imgur.com/DDA1om1.gif") no-repeat center;
+    z-index: 99999;
+}
+
+.myDiv {
+    display: block;
+    height: auto;
     background: #360033;
-    background: -webkit-linear-gradient(to left, #0b8793, #360033); 
-    background: linear-gradient(to left, #0b8793, #360033);  
-}
-#mainNav{
-    padding:0;
-    margin:0;
-    margin-bottom:2rem;
+    background: -webkit-linear-gradient(to left, #0b8793, #360033);
+    background: linear-gradient(to left, #0b8793, #360033);
 }
 
-#navbarResponsive{
-    background:transparent;
-    height:auto;
-    z-index:5;
+#mainNav {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2rem;
 }
 
-.logo{
+#navbarResponsive {
+    background: transparent;
+    height: auto;
+    z-index: 5;
+}
+
+.logo {
     width: 3.5rem;
     height: 3.5rem;
     margin: 0;
-    margin-left:1rem;
+    margin-left: 1rem;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     margin-right: 1rem;
 }
 
 .navbar-dark .navbar-brand {
-  
     color: #ffffff;
     font-size: 1rem;
     font-weight: bold;
-    padding:0;
-  }
-  
-  .navbar-dark .navbar-nav .nav-link {
+    padding: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
     color: #ffffff;
     font-weight: bold;
     font-size: 1rem;
-  }
+}
 
-  @media screen and (max-width: 800px){
-
-    #navbarResponsive{
-        width:100%;
+@media screen and (max-width: 800px) {
+    #navbarResponsive {
+        width: 100%;
         box-sizing: border-box;
-        padding:6px;
-        margin:0;
-        background: #360033;  
-        background: -webkit-linear-gradient(to left, #0b8793, #360033); 
-        background: linear-gradient(to left, #0b8793, #360033);  
+        padding: 6px;
+        margin: 0;
+        background: #360033;
+        background: -webkit-linear-gradient(to left, #0b8793, #360033);
+        background: linear-gradient(to left, #0b8793, #360033);
     }
 }
+
 
 /*------------------------------------------------------------------------*/
 
-@media screen and (max-width:800px){
-    .fa-quote-left, .fa-quote-right{
+@media screen and (max-width:800px) {
+    .fa-quote-left,
+    .fa-quote-right {
         font-size: 3rem;
     }
-    .display-4 p{
+    .display-4 p {
         font-size: 3rem;
     }
-
-     footer{
-          padding-top:5%;
-      }
+    footer {
+        padding-top: 5%;
+    }
 }
 
-.card{
-    display:block;
-    margin:0 auto;
-    width:17rem;
-    height:100%;
+.card {
+    display: block;
+    margin: 0 auto;
+    width: 17rem;
+    height: 100%;
     cursor: pointer;
 }
 
-.card:hover{
-    border:1px solid black;
+.card:hover {
+    border: 1px solid black;
 }
 
-.card-body{
-    height:50%;
+.card-body {
+    height: 50%;
 }
-.card, .card-body{
+
+.card,
+.card-body {
     transition: 0.3s ease;
 }
 
-.card:hover .card-body h5{
-    font-size:1.3rem;
+.card:hover .card-body h5 {
+    font-size: 1.3rem;
     transition: 0.25s ease;
 }
-.disappear{
-    display:block;
-    height:0;
+
+.disappear {
+    display: block;
+    height: 0;
     transition: 0.3s ease;
     overflow: hidden;
 }
-.card-title{
-    border:0 2px 2px 2px solid #000;
+
+.card-title {
+    border: 0 2px 2px 2px solid #000;
 }
 
-.card:hover{
-    border:1px solid black; 
+.card:hover {
+    border: 1px solid black;
 }
 
-footer{
-    padding-top:2%;
-    background: #360033;  
-    background: -webkit-linear-gradient(to left, #0b8793, #360033); 
+footer {
+    padding-top: 2%;
+    background: #360033;
+    background: -webkit-linear-gradient(to left, #0b8793, #360033);
     background: linear-gradient(to left, #0b8793, #360033);
-    height:12vh;
-    color:whitesmoke;
+    height: 12vh;
+    color: whitesmoke;
 }
 
-
-
-  @media screen and (max-width:500px){
-      .card{
-          margin-top:2%;
-      }
-
-      footer{
-          margin-top:5%;
-          padding-top:5%;
-      }
-  }
+@media screen and (max-width:500px) {
+    .card {
+        margin-top: 2%;
+    }
+    footer {
+        margin-top: 5%;
+        padding-top: 5%;
+    }
+}
