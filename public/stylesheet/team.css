@@ -6,7 +6,9 @@
             background-attachment: fixed;
             width: 100%;
         }
-
+.display-2{
+     font-family: 'Mansalva', cursive;
+}
 
 /* -------------------------------------------------- */
 #mainNav{
@@ -166,4 +168,7 @@ footer{
      footer{
          padding-top:7%;
      }
-}
+     .display-2{
+         font-size:4rem;
+     }
+  }
