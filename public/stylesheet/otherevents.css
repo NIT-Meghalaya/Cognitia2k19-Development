@@ -104,6 +104,27 @@
 }
 
 .card:hover{
-    border:1px solid black;
-    
+    border:1px solid black; 
 }
+
+footer{
+    padding-top:2%;
+    background: #360033;  
+    background: -webkit-linear-gradient(to left, #0b8793, #360033); 
+    background: linear-gradient(to left, #0b8793, #360033);
+    height:12vh;
+    color:whitesmoke;
+}
+
+
+
+  @media screen and (max-width:500px){
+      .card{
+          margin-top:2%;
+      }
+
+      footer{
+          margin-top:5%;
+          padding-top:5%;
+      }
+  }
