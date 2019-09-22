@@ -56,3 +56,25 @@
 }
 
 /*------------------------------------------------------------------------*/
+
+@media screen and (max-width:800px){
+    .fa-quote-left, .fa-quote-right{
+        font-size: 3rem;
+    }
+    .display-4 p{
+        font-size: 3rem;
+    }
+
+     footer{
+          padding-top:5%;
+      }
+}
+
+.card{
+    margin:0;
+}
+
+.card:hover{
+    border:1px solid black;
+    
+}

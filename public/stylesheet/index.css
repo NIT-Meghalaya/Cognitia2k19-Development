@@ -125,12 +125,12 @@ button:focus {
 }
 
 .dropdown-menu a{
-  color: #0b8793 !important;
+  color: darkorchid !important;
   text-transform: uppercase;
   padding: 4% 7%;
 }
 .dropdown-menu a:hover {
-  background-color: #0b8793;
+  background-color: darkorchid;
   opacity: 0.5;
   color: white !important;
 }
