@@ -60,35 +60,34 @@
 
 .swiper-slide {
             width: 32rem;
-            height: 57rem;
+            height: 47rem;
+            padding-top: 3rem;
             background: rgb(20, 18, 19);
             color: #fff;
+            border-radius: 3px;
         }
     
 .swiper-slide img{
     display: block;
     margin: 0 auto;
-    width: 32rem;
-    height: 41.6rem;
+    width: 24rem;
+    height: 31.2rem;
 }
 
 .info{
-    width: 30rem;
-    height: 30rem;
     display: block;
     margin: 0 auto;
-    padding: 1.5rem;
+    text-align: center;
     font-family: "Lexend Deca", sans-serif;
+    margin-top: 2rem;
 }
 
-.info ul{
-    list-style-type: none;
-    font-size: 1.25rem;
-    font-weight: 100;
+.info h2{
+    margin-bottom: 1rem;
 }
 
-.info li{
-    margin-top: 1rem; 
+.info p{
+    font-size: 1.2rem;
 }
 
 footer{
@@ -107,8 +106,9 @@ footer{
      }
 
      .swiper-slide {
-        width: 15rem;
+        width: 16rem;
         height: 30rem;
+        padding-top: 1.4rem;
         background: #000;
         color: #fff;
     }
@@ -116,8 +116,8 @@ footer{
     .swiper-slide img{
         display: block;
         margin: 0 auto;
-        width: 15rem;
-        height: 19.5rem;
+        width: 13rem;
+        height: 16.9rem;
     }
 
     .info{
@@ -134,14 +134,8 @@ footer{
         font-size: 1rem;
     }
 
-    .info ul{
-        list-style-type: none;
-        font-size: 0.75rem;
-        font-weight: 100;
-    }
-
-    .info li{
-        margin-top: 0.75rem; 
+    .info p{
+        font-size: 0.85rem;
     }
 
     .swiper-container h1{
