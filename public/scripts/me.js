@@ -1,45 +1,39 @@
 $(document).ready(function () {
 
     let x = document.getElementsByClassName('disappear');
-    let current = -1;
+    let checker = [false, false, false]
 
-    function reset() {
-        for (let i = 0; i < 3; ++i)
-            x[i].style.height = "0"
-    }
+
     $("#toggleInertia").click(function () {
-        reset()
-        if (current !== 0){
-            current = 0
+        if (!checker[0]) {
             x[0].style.height = "100%"
+            checker[0] = true
         }
-        else{
+        else {
             x[0].style.height = "0"
-            current = -1;
+            checker[0] = false
         }
     });
 
     $("#toggleLoad").click(function () {
-        reset()
-        if (current !== 1){
-            current = 1
+        if (!checker[1]) {
             x[1].style.height = "100%"
+            checker[1] = true
         }
-        else{
+        else {
             x[1].style.height = "0"
-            current = -1;
+            checker[1] = false
         }
     });
 
     $("#toggleAssembler").click(function () {
-        reset()
-        if (current !== 2){
-            current = 2
+        if (!checker[2]) {
             x[2].style.height = "100%"
+            checker[2] = true
         }
-        else{
+        else {
             x[2].style.height = "0"
-            current = -1;
+            checker[2] = false
         }
     });
 });
