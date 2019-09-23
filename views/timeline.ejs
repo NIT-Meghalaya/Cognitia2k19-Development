@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/stylesheet/timeline.css">
     <link rel="icon" href="/assests/images/icon_128.ico">
     <title>Cognitia'19</title>
 </head>
+
 <body>
-    <h1>Under Progress</h1>
+
+    <div class="container">
+       
+        <div class="jumbotron mt-4">
+           
+            <blockquote class="display-4">
+                <p>
+                    <i class="fa fa-quote-left"></i>
+                    Visit us on the largest technical celebration in the state of Meghalaya.
+                    <i class="fa fa-quote-right"></i>
+                </p>
+            </blockquote>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-sm-12">
+                <div class="text-center display-4">
+                    <h1 id="demo"></h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mt-4">
+                <div class="thumb">
+                    <span class="days up" id="day"></span>
+                    <div class="smalltext">Days</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-4">
+                <div class="thumb">
+                    <span class="hours up" id="hour"></span>
+                    <div class="smalltext">Hours</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-4">
+                <div class="thumb">
+                    <span class="minutes up" id="minute"></span>
+                    <div class="smalltext">Minutes</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-4 mb-4">
+                <div class="thumb">
+                    <span class="seconds up" id="second"></span>
+                    <div class="smalltext">Seconds</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="/scripts/timeline.js"></script>
 </body>
+
 </html>

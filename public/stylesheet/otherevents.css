@@ -71,10 +71,60 @@
 }
 
 .card{
-    margin:0;
+    display:block;
+    margin:0 auto;
+    width:17rem;
+    height:100%;
+    cursor: pointer;
 }
 
 .card:hover{
     border:1px solid black;
-    
 }
+
+.card-body{
+    height:50%;
+}
+.card, .card-body{
+    transition: 0.3s ease;
+}
+
+.card:hover .card-body h5{
+    font-size:1.3rem;
+    transition: 0.25s ease;
+}
+.disappear{
+    display:block;
+    height:0;
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+.card-title{
+    border:0 2px 2px 2px solid #000;
+}
+
+.card:hover{
+    border:1px solid black; 
+}
+
+footer{
+    padding-top:2%;
+    background: #360033;  
+    background: -webkit-linear-gradient(to left, #0b8793, #360033); 
+    background: linear-gradient(to left, #0b8793, #360033);
+    height:12vh;
+    color:whitesmoke;
+}
+
+
+
+  @media screen and (max-width:500px){
+      .card{
+          margin-top:2%;
+      }
+
+      footer{
+          margin-top:5%;
+          padding-top:5%;
+      }
+  }
