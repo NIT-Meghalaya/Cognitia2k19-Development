@@ -1,32 +1,99 @@
  body {
-            color: #000;
+            color: rgb(235, 231, 231);
             padding: 0;
-            background:#f1f1f1;
-            height:100vh;
-           
-
+            background-image: url("/assests/images/svg/teambg.svg");
+            background-size: cover;
+            background-attachment: fixed;
+            width: 100%;
         }
 .display-2{
      font-family: 'Mansalva', cursive;
 }
 
+/* -------------------------------------------------- */
+#mainNav{
+    background: #360033;  
+   background: -webkit-linear-gradient(to left, #0b8793, #360033); 
+   background: linear-gradient(to left, #0b8793, #360033);  
+   padding:0;
+   margin:0;
+   height:11vh;
+   margin-bottom:2rem;
+}
+
+#navbarResponsive{
+   background:transparent;
+   height:auto;
+   z-index:5;
+}
+
+.logo{
+   width: 3.5rem;
+   height: 3.5rem;
+   margin: 0;
+   padding-left:6px;
+}
+.navbar-toggler-icon{
+   padding-right: 6px;
+}
+
+.navbar-dark .navbar-brand {
+ 
+   color: #ffffff;
+   font-size: 1rem;
+   font-weight: bold;
+   padding:0;
+ }
+ 
+ .navbar-dark .navbar-nav .nav-link {
+   color: #ffffff;
+   font-weight: bold;
+   font-size: 1rem;
+ }
+
+
+/* -------------------------------------------------- */
 .swiper-container {
             width: 100%;
-            padding-top: 3%;
-            padding-bottom: 50px;
+            padding-bottom: 7rem;
         }
 
 .swiper-slide {
-            margin-top:3%;
-            background-position: center;
-            background-size: cover;
-            width: 300px;
-            height: 300px;
+            width: 32rem;
+            height: 57rem;
+            background: rgb(20, 18, 19);
+            color: #fff;
         }
+    
+.swiper-slide img{
+    display: block;
+    margin: 0 auto;
+    width: 32rem;
+    height: 41.6rem;
+}
+
+.info{
+    width: 30rem;
+    height: 30rem;
+    display: block;
+    margin: 0 auto;
+    padding: 1.5rem;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.info ul{
+    list-style-type: none;
+    font-size: 1.25rem;
+    font-weight: 100;
+}
+
+.info li{
+    margin-top: 1rem; 
+}
 
 footer{
-      padding-top:2%;
-     background: #360033;  
+    padding-top:2%;
+    background: #360033;  
     background: -webkit-linear-gradient(to left, #0b8793, #360033); 
     background: linear-gradient(to left, #0b8793, #360033);
     height:13vh;
@@ -34,12 +101,70 @@ footer{
   }
 
 
-    @media(max-width:800px){
+@media(max-width:800px){
      footer{
          padding-top:5%;
      }
-  }
-  @media(max-width:500px){
+
+     .swiper-slide {
+        width: 15rem;
+        height: 30rem;
+        background: #000;
+        color: #fff;
+    }
+
+    .swiper-slide img{
+        display: block;
+        margin: 0 auto;
+        width: 15rem;
+        height: 19.5rem;
+    }
+
+    .info{
+        width: 13rem;
+        height: 10rem;
+        display: block;
+        margin: 0 auto;
+        padding: 0.5rem;
+        font-family: "Lexend Deca", sans-serif;
+    }
+    
+    .info h2{
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .info ul{
+        list-style-type: none;
+        font-size: 0.75rem;
+        font-weight: 100;
+    }
+
+    .info li{
+        margin-top: 0.75rem; 
+    }
+
+    .swiper-container h1{
+        font-size: 2.5rem;
+    }
+
+    #mainNav{
+        height:15vh;
+    }
+    #navbarResponsive{
+        width:100%;
+        box-sizing: border-box;
+        padding:6px;
+        margin:0;
+         background: #360033;  
+        background: -webkit-linear-gradient(to left, #0b8793, #360033); 
+        background: linear-gradient(to left, #0b8793, #360033);  
+        opacity: 0.8;
+    }
+      }
+}
+
+@media(max-width:500px){
      footer{
          padding-top:7%;
      }
