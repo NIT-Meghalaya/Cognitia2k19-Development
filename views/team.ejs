@@ -24,7 +24,8 @@
 
 </head>
 
-<body>
+<body onload="loadfunc()">
+    <div id="preload"></div>
     <div class="myDiv">
         <nav class="navbar navbar-expand-lg navbar-dark py-3" id="mainNav">
             <div class="container">
@@ -122,6 +123,13 @@
     </div>
 
     <footer class="text-center">&copy; Cognitia 2019,NIT Meghalaya</footer>
+    <script>
+        let preloader = document.getElementById('preload');
+
+        function loadfunc() {
+            preloader.style.display = 'none';
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -133,6 +141,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <script src="scripts/team.js"></script>
+
 </body>
 
 </html>

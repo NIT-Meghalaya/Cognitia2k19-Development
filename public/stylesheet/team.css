@@ -156,13 +156,13 @@ footer{
         opacity: 0.8;
     }
       }
-}
+
 
 @media(max-width:500px){
      footer{
          padding-top:7%;
      }
-     .display-2{
-         font-size:4rem;
+     .display-2 {
+         font-size: 4rem;
      }
   }

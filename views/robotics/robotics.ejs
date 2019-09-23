@@ -17,16 +17,15 @@
 
 </head>
 
-<body>
+<body onload="loadfunc()">
+    <div id="preload"></div>
     <div class="myDiv">
         <nav class="navbar navbar-expand-lg navbar-dark py-3" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="/">
                     <img class="logo" src="/assests/images/svg/logo.svg" />
                 </a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarResponsive">
@@ -57,8 +56,7 @@
         <div class="jumbotron">
             <blockquote class="display-4">
                 <p>
-                    <i class="fa fa-quote-left"></i>
-                    We're fascinated by robots because they are a reflection of ourselves.
+                    <i class="fa fa-quote-left"></i> We're fascinated by robots because they are a reflection of ourselves.
                     <i class="fa fa-quote-right"></i>
                 </p>
             </blockquote>
@@ -70,23 +68,15 @@
         <div class="row">
             <div class=" col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div class="card" id="toggleIconRAT">
-                    <div class="img-wrap color1"><img src="/assests/images/robotics_thumbnail/svg/rat.svg"
-                            class="card-img-top"></div>
+                    <div class="img-wrap color1"><img src="/assests/images/robotics_thumbnail/svg/rat.svg" class="card-img-top"></div>
                     <div class="card-body">
                         <h5 class="card-title text-center">Race Against Time
                         </h5>
                         <div id="disappearRAT" class="disappear">
-                            <p class="card-text">Design a remote controlled wireless robot that can travel through
-                                all
-                                turns of the
-                                track. The robot that will complete the race in least time with best accuracy will
-                                win
-                                the race.</p>
+                            <p class="card-text">Design a remote controlled wireless robot that can travel through all turns of the track. The robot that will complete the race in least time with best accuracy will win the race.</p>
                             <div class="d-flex justify-content-around">
-                                <a class="btn btn-primary btn-sm" href="/rules/robotics/RAT.pdf"
-                                    target="_blank">Details</a>
-                                <a class="btn btn-danger btn-sm" href="/registration/robotics"
-                                    target="_blank">Register</a>
+                                <a class="btn btn-primary btn-sm" href="/rules/robotics/RAT.pdf" target="_blank">Details</a>
+                                <a class="btn btn-danger btn-sm" href="/registration/robotics" target="_blank">Register</a>
                             </div>
                         </div>
                     </div>
@@ -95,21 +85,15 @@
             <!-- Second card -->
             <div id="toggleIconGAT" class=" col-lg-4 col-md-6 col-sm-12 mb-4 ">
                 <div class="card">
-                    <div class="img-wrap color2"><img src="/assests/images/robotics_thumbnail/svg/gat.svg"
-                            class="card-img-top"></div>
+                    <div class="img-wrap color2"><img src="/assests/images/robotics_thumbnail/svg/gat.svg" class="card-img-top"></div>
                     <div class="card-body">
                         <h5 class="card-title text-center">Goal Against Time
                         </h5>
                         <div id="disappearGAT" class="disappear">
-                            <p class="card-text">Design a remote controlled robot blending your technical intellect
-                                and
-                                innovative ideas capable to goal against time and
-                                fellow robots with maximum accuracy and in minimum time.</p>
+                            <p class="card-text">Design a remote controlled robot blending your technical intellect and innovative ideas capable to goal against time and fellow robots with maximum accuracy and in minimum time.</p>
                             <div class="d-flex justify-content-around">
-                                <a class="btn btn-primary btn-sm" href="/rules/robotics/GAT.pdf"
-                                    target="_blank">Details</a>
-                                <a class="btn btn-danger btn-sm" href="/registration/robotics"
-                                    target="_blank">Register</a>
+                                <a class="btn btn-primary btn-sm" href="/rules/robotics/GAT.pdf" target="_blank">Details</a>
+                                <a class="btn btn-danger btn-sm" href="/registration/robotics" target="_blank">Register</a>
                             </div>
                         </div>
                     </div>
@@ -118,21 +102,15 @@
             <!-- Third Card -->
             <div id="toggleIconDiction" class="col-lg-4 col-md-6 col-sm-12 mb-4  ">
                 <div class="card">
-                    <div class="img-wrap color3"> <img src="/assests/images/robotics_thumbnail/svg/robodiction.svg"
-                            class="card-img-top"></div>
+                    <div class="img-wrap color3"> <img src="/assests/images/robotics_thumbnail/svg/robodiction.svg" class="card-img-top"></div>
                     <div class="card-body">
                         <h5 class="card-title text-center">RoboDiction
                         </h5>
                         <div id="disappearDiction" class="disappear">
-                            <p class="card-text">Design a remote controlled wireless or wired bot which can reach
-                                its
-                                destination by tackling all different kinds of the obstacles coming in its way as
-                                quickly as possible.</p>
+                            <p class="card-text">Design a remote controlled wireless or wired bot which can reach its destination by tackling all different kinds of the obstacles coming in its way as quickly as possible.</p>
                             <div class="d-flex justify-content-around">
-                                <a class="btn btn-primary btn-sm" href="/rules/robotics/Robodiction.pdf"
-                                    target="_blank">Details</a>
-                                <a class="btn btn-danger btn-sm" href="/registration/robotics"
-                                    target="_blank">Register</a>
+                                <a class="btn btn-primary btn-sm" href="/rules/robotics/Robodiction.pdf" target="_blank">Details</a>
+                                <a class="btn btn-danger btn-sm" href="/registration/robotics" target="_blank">Register</a>
                             </div>
                         </div>
                     </div>
@@ -140,21 +118,15 @@
             </div>
             <div id="toggleIconLFR" class="col-lg-4 col-md-6 col-sm-12 mb-4 ">
                 <div class="card">
-                    <div class="img-wrap color4"><img src="/assests/images/robotics_thumbnail/svg/lfr.svg"
-                            class="card-img-top"></div>
+                    <div class="img-wrap color4"><img src="/assests/images/robotics_thumbnail/svg/lfr.svg" class="card-img-top"></div>
                     <div class="card-body">
                         <h5 class="card-title text-center">Line Follower Robot
                         </h5>
                         <div id="disappearLFR" class="disappear">
-                            <p class="card-text">The Line Follower event is about designing a bot that will follow
-                                a
-                                black line along the track laid
-                                out,making smart decisions at crossroads and finishing the fastest.</p>
+                            <p class="card-text">The Line Follower event is about designing a bot that will follow a black line along the track laid out,making smart decisions at crossroads and finishing the fastest.</p>
                             <div class="d-flex justify-content-around">
-                                <a class="btn btn-primary btn-sm" href="/rules/robotics/LFR.pdf"
-                                    target="_blank">Details</a>
-                                <a class="btn btn-danger btn-sm" href="/registration/robotics"
-                                    target="_blank">Register</a>
+                                <a class="btn btn-primary btn-sm" href="/rules/robotics/LFR.pdf" target="_blank">Details</a>
+                                <a class="btn btn-danger btn-sm" href="/registration/robotics" target="_blank">Register</a>
                             </div>
                         </div>
                     </div>
@@ -163,21 +135,15 @@
             <!-- Second card -->
             <div id="toggleIconRumble" class="col-lg-4 col-md-6 col-sm-12 mb-4 ">
                 <div class="card">
-                    <div class="img-wrap color5"><img src="/assests/images/robotics_thumbnail/svg/rumble.svg"
-                            class="card-img-top"></div>
+                    <div class="img-wrap color5"><img src="/assests/images/robotics_thumbnail/svg/rumble.svg" class="card-img-top"></div>
                     <div class="card-body">
                         <h5 class="card-title text-center">Robo Rumble
                         </h5>
                         <div id="disappearRumble" class="disappear">
-                            <p class="card-text">A Robotic event which derives its origin from a genre of
-                                professional
-                                wrestling in which there is only one way of
-                                eliminating the opponents- throwing them out of the ring.</p>
+                            <p class="card-text">A Robotic event which derives its origin from a genre of professional wrestling in which there is only one way of eliminating the opponents- throwing them out of the ring.</p>
                             <div class="d-flex justify-content-around">
-                                <a class="btn btn-primary btn-sm" href="/rules/robotics/RoboRumble.pdf"
-                                    target="_blank">Details</a>
-                                <a class="btn btn-danger btn-sm" href="/registration/robotics"
-                                    target="_blank">Register</a>
+                                <a class="btn btn-primary btn-sm" href="/rules/robotics/RoboRumble.pdf" target="_blank">Details</a>
+                                <a class="btn btn-danger btn-sm" href="/registration/robotics" target="_blank">Register</a>
                             </div>
                         </div>
                     </div>
@@ -186,21 +152,15 @@
             <!-- Third Card -->
             <div id="toggleIconPrison" class="col-lg-4 col-md-6 col-sm-12 mb-4 ">
                 <div class="card">
-                    <div class="img-wrap color6"><img src="/assests/images/robotics_thumbnail/svg/jail.svg"
-                            class="card-img-top"></div>
+                    <div class="img-wrap color6"><img src="/assests/images/robotics_thumbnail/svg/jail.svg" class="card-img-top"></div>
                     <div class="card-body">
                         <h5 class="card-title text-center">Prison Breakout
                         </h5>
                         <div id="disappearPrison" class="disappear">
-                            <p class="card-text">Design a manual bot and help escape the autonomous bot from
-                                prison.
-                                Autonomous bot must follow black line and do the
-                                entrusted in gameplay.Help your bot friend escape and you win.</p>
+                            <p class="card-text">Design a manual bot and help escape the autonomous bot from prison. Autonomous bot must follow black line and do the entrusted in gameplay.Help your bot friend escape and you win.</p>
                             <div class="d-flex justify-content-around">
-                                <a class="btn btn-primary btn-sm" href="/rules/robotics/PrisonBreakout.pdf"
-                                    target="_blank">Details</a>
-                                <a class="btn btn-danger btn-sm" href="/registration/robotics"
-                                    target="_blank">Register</a>
+                                <a class="btn btn-primary btn-sm" href="/rules/robotics/PrisonBreakout.pdf" target="_blank">Details</a>
+                                <a class="btn btn-danger btn-sm" href="/registration/robotics" target="_blank">Register</a>
                             </div>
                         </div>
                     </div>
@@ -208,21 +168,15 @@
             </div>
             <div id="toggleIconBridge" class="col-lg-4 col-md-6 col-sm-12 mb-4 ">
                 <div class="card">
-                    <div class="img-wrap color7"><img src="/assests/images/robotics_thumbnail/svg/pickup.svg"
-                            class="card-img-top"></div>
+                    <div class="img-wrap color7"><img src="/assests/images/robotics_thumbnail/svg/pickup.svg" class="card-img-top"></div>
                     <div class="card-body">
                         <h5 class="card-title text-center">Pick and Place
                         </h5>
                         <div id="disappearBridge" class="disappear">
-                            <p class="card-text">Design a wired or wireless manually controlled robot having the
-                                ability
-                                to lift the objects from one place to another using an
-                                arm mechanism.All you have do is complete a structure.</p>
+                            <p class="card-text">Design a wired or wireless manually controlled robot having the ability to lift the objects from one place to another using an arm mechanism.All you have do is complete a structure.</p>
                             <div class="d-flex justify-content-around">
-                                <a class="btn btn-primary btn-sm" href="/rules/robotics/PickAndPlace.pdf"
-                                    target="_blank">Details</a>
-                                <a class="btn btn-danger btn-sm" href="/registration/robotics"
-                                    target="_blank">Register</a>
+                                <a class="btn btn-primary btn-sm" href="/rules/robotics/PickAndPlace.pdf" target="_blank">Details</a>
+                                <a class="btn btn-danger btn-sm" href="/registration/robotics" target="_blank">Register</a>
                             </div>
                         </div>
                     </div>
@@ -233,17 +187,18 @@
     </div>
     <footer class="text-center">&copy; Cognitia 2019, NIT Meghalaya</footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script src="/scripts/robotics.js"></script>
+    <script>
+        var preloader = document.getElementById('preload');
+
+        function loadfunc() {
+            preloader.style.display = 'none';
+        }
+    </script>
 
 </body>
 

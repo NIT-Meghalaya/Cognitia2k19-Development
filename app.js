@@ -9,7 +9,6 @@ const transporter = require("./models/transporter");
 
 //  mongoose.connect("mongodb://localhost/cognitia", { useNewUrlParser: true });
 
-
 //-----------------------------------------------------------------------------------//
 
 app.set("view engine", "ejs");
