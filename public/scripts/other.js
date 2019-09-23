@@ -1,57 +1,48 @@
 $(document).ready(function () {
 
     let x = document.getElementsByClassName('disappear');
-    let current = -1;
-
-    function reset() {
-        for (let i = 0; i < 4; ++i)
-            x[i].style.height = "0"
-    }
+    let checker = [false, false, false, false]
     $("#techstorm").click(function () {
-        reset()
-        if (current !== 0){
-            current = 0
+        if (!checker[0]) {
             x[0].style.height = "100%"
+            checker[0] = true
         }
-        else{
+        else {
             x[0].style.height = "0"
-            current = -1;
+            checker[0] = false
         }
     });
 
     $("#science").click(function () {
-        reset()
-        if (current !== 1){
-            current = 1
+        if (!checker[1]) {
             x[1].style.height = "100%"
+            checker[1] = true
         }
-        else{
+        else {
             x[1].style.height = "0"
-            current = -1;
+            checker[1] = false
         }
     });
 
     $("#quiz").click(function () {
-        reset()
-        if (current !== 2){
-            current = 2
+        if (!checker[2]) {
             x[2].style.height = "100%"
+            checker[2] = true
         }
-        else{
+        else {
             x[2].style.height = "0"
-            current = -1;
+            checker[2] = false
         }
     });
 
     $("#gaming").click(function () {
-        reset()
-        if (current !== 3){
-            current = 3
+        if (!checker[3]) {
             x[3].style.height = "100%"
+            checker[3] = true
         }
-        else{
+        else {
             x[3].style.height = "0"
-            current = -1;
+            checker[3] = false
         }
     });
 });
