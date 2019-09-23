@@ -1,4 +1,4 @@
-let deadline = new Date("Sep 29, 2019 12:00:00").getTime();
+let deadline = new Date("Sep 29, 2019 24:00:00").getTime();
 
 let x = setInterval(function () {
 
