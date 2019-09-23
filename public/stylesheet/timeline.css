@@ -45,20 +45,11 @@ body {
     font-family: 'Mansalva', cursive;
 }
 
-<<<<<<< HEAD
-@media(max-width:600px) {
-    .col-sm-6 {
-        margin-left: 16%;
-    }
-    .display-4 {
-        font-size: 2.5rem;
-=======
 @media(max-width:600px){
     .col-sm-6{
         margin-left:20%;
     }
     .display-4{
         font-size:2.7rem;
->>>>>>> d43fc827151e64a7132dc685d77294fcffca1284
     }
 }
