@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 const transporter = require("./models/transporter");
 
 
-//  mongoose.connect("mongodb://localhost/cognitia", { useNewUrlParser: true });
+ mongoose.connect("mongodb://localhost/cognitia", { useNewUrlParser: true });
 
 //-----------------------------------------------------------------------------------//
 
