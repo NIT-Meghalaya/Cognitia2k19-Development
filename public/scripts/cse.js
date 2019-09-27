@@ -1,84 +1,74 @@
 
 $(document).ready(function () {
 
-    let x = document.getElementsByClassName('disappear');
-    let current = -1;
-    function reset() {
-        for (let i = 0; i < 6; ++i)
-            x[i].style.height = "0"
-    }
+    let x = document.getElementsByClassName('disappear')
+    let checker = [false, false, false, false, false, false]
     $("#toggleCrack").click(function () {
-        reset()
-        if (current !== 0) {
-            current = 0
+        if (!checker[0]) {
             x[0].style.height = "100%"
+            checker[0] = true
         }
         else {
             x[0].style.height = "0"
-            current = -1;
+            checker[0] = false
         }
 
     });
 
     $("#toggleCode").click(function () {
-        reset()
-        if (current !== 1) {
-            current = 1
+        if (!checker[1]) {
             x[1].style.height = "100%"
+            checker[1] = true
         }
         else {
             x[1].style.height = "0"
-            current = -1;
+            checker[1] = false
         }
 
     });
 
     $("#toggleHound").click(function () {
-        reset()
-        if (current !== 2) {
-            current = 2
+        if (!checker[2]) {
             x[2].style.height = "100%"
+            checker[2] = true
         }
         else {
             x[2].style.height = "0"
-            current = -1;
+            checker[2] = false
         }
 
     });
 
     $("#toggleCodeFever").click(function () {
-        reset()
-        if (current !== 3) {
-            current = 3
+        if (!checker[3]) {
             x[3].style.height = "100%"
+            checker[3] = true
         }
         else {
             x[3].style.height = "0"
-            current = -1;
+            checker[3] = false
         }
     });
 
     $("#toggleQ").click(function () {
-        reset()
-        if (current !== 4) {
-            current = 4
+        if (!checker[4]) {
             x[4].style.height = "100%"
+            checker[4] = true
         }
         else {
             x[4].style.height = "0"
-            current = -1;
+            checker[4] = false
         }
     });
 
     $("#toggleMega").click(function () {
-        reset()
-        if (current !== 5) {
-            current = 5
+        if (!checker[5]) {
             x[5].style.height = "100%"
+            checker[5] = true
         }
         else {
             x[5].style.height = "0"
-            current = -1;
+            checker[5] = false
         }
     });
 });
